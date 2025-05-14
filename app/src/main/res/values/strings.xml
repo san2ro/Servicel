@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Servicel</string>
+
+    <string name="title_home">Inicio</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="title_balances">Balances</string>
+    <string name="title_shop">Compras</string>
+    <string name="title_settings">Ajustes</string>
+    <string name="title_operaciones">Operaciones</string>
+
+    <string name="message_error">Lo siento, ha ocurrido un error inesperado. Por favor, envienos el registro de errores, así podemos darle una solución.</string>
+    <string name="title_error">Error</string>
+    <string name="btn_send_error">Enviar error</string>
+    <string name="btn_cancel_error">Cerrar</string>
+    <string name="not_email_client">No tienes un cliente de correo instalado em tu móvil</string>
+    <string name="text_saldo">Saldo</string>
+    <string name="text_bono">Bonos</string>
+    <string name="text_datos">Datos</string>
+    <string name="text_amigo">Amigo</string>
+
+    <string name="subtitle_diaria">Paquete para la red 4G, válido por 24 horas</string>
+    <string name="subtitle_mensajeria">Paquete nacional para todas las redes</string>
+    <string name="subtitle_plan_basico">Paquete de datos para las redes 2G, 3G y 4G</string>
+    <string name="subtitle_plan_medio">Paquete de datos para las redes 2G, 3G y 4G</string>
+    <string name="subtitle_plan_extra">Paquete de datos para las redes 2G, 3G y 4G</string>
+
+
+    <string name="validez_30_days">Vigencia: 30 días a partir de su uso</string>
+    <string name="plan_nacional">300 MB nacionales de bonificación</string>
+
+    <string name="plan_basico_all_network">600 MB para todas las redes (2G,3G,4G)</string>
+    <string name="plan_basico_lte_network">800 MB sólo para la red 4G</string>
+    <string name="minutos_plan_basico">15 minutos de llamada nacional</string>
+    <string name="mensajes_plan_basico">20 mensajes nacionales</string>
+
+    <string name="plan_medio_all_network">1.5 GB para todas las redes (2G,3G,4G)</string>
+    <string name="plan_medio_lte_network">2 GB sólo para la red 4G</string>
+    <string name="minutos_plan_medio">35 minutos de llamada nacional</string>
+    <string name="mensajes_plan_medio">40 mensajes nacionales</string>
+
+    <string name="plan_extra_all_network">3.5 GB para todas las redes (2G,3G,4G)</string>
+    <string name="plan_extra_lte_network">4.5 GB sólo para la red 4G</string>
+    <string name="minutos_plan_extra">75 minutos de llamada nacional</string>
+    <string name="mensajes_plan_extra">80 mensajes nacionales</string>
+
+    <string name="plan_bolsa_diaria">200 MB sólo para la red 4G</string>
+    <string name="plan_mensajeria">600 MB nacionales para toDus y correo nauta</string>
+
+    <string name="paquete_basico_lte_network">1 GB sólo para la red 4G</string>
+    <string name="paquete_medio_lte_network">2.5 GB sólo para la red 4G</string>
+    <string name="paquete_extra_lte_network">12 GB sólo para la red 4G</string>
+    <string name="paquete_extra_all_network">4 GB para todas las redes (2G,3G,4G)</string>
+
+    <string name="title_error_planes">Sin respuesta del servidor</string>
+    <string name="message_error_planes">No fue posible obtener la información de planes y bonos. Esto puede deberse a un error temporal o a que el número no cuenta con servicios activos. Por favor, inténtalo nuevamente o revisa tu conexión.</string>
+    <string name="message_error_services">No fue posible obtener la información de Servicios Móviles, esto puede deberse a un error temporal. Por favor, espere unos minutos e inténtalo nuevamente o revisa tu conexión.</string>
+
+    <string name="title_error_planes_y_bonos_empty">¡Ups, aquí no hay nada!</string>
+    <string name="message_error_planes_y_bonos_empty">El número no tiene servicios contratados o no fue posible obtener la información debido a un error del proveedor de servicios, de ser así vuelva a intentarlo nuevamente.</string>
+    <string name="description_app">Esta aplicación es una herramienta independiente diseñada para facilitar a los usuarios de la Empresa de Telecomunicaciones de Cuba (ETECSA) la gestión de sus servicios.</string>
+    <string name="title_back">Atrás</string>
+    <string name="colaboradores"><b>Colaboración</b>\nRosanna Moreno\nOrdiel Victor\nBeta testers voluntarios</string>
+    <string name="desarrollo"><b>Desarrollo y Diseño</b>\nAlessandro Rodríguez</string>
+    
+    
+</resources>

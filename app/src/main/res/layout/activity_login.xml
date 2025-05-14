@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:padding="20dp">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:textAppearance="?textAppearanceDisplaySmall"
+         android:layout_marginTop="30dp"
+         android:id="@+id/title"
+         android:textStyle="bold"
+         android:text="Iniciar sesión" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_below="@id/title"
+         android:gravity="center"
+         android:textAppearance="?textAppearanceBodyMedium"
+         android:id="@+id/subtitle"
+         android:text="Inicie sesión usando su cuenta en www.nauta.cu" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_alignParentBottom="true"
+         android:id="@+id/content">
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:padding="20dp"
+             android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 app:boxCornerRadiusBottomEnd="30dp"
+                 app:boxCornerRadiusTopStart="30dp"
+                 app:boxStrokeWidth="0dp"
+                 app:boxCornerRadiusTopEnd="30dp"
+                 app:endIconMode="custom"
+                 android:hint="Usuario"
+                 app:endIconDrawable="@drawable/ic_email_fill_24dp"
+                 app:boxCornerRadiusBottomStart="30dp"
+                 app:boxStrokeWidthFocused="0dp"
+                 style="?attr/textInputFilledStyle"
+                 app:prefixText="+53"
+                 app:errorEnabled="true"
+                 android:id="@+id/layout_username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:imeOptions="actionNext"
+                     android:maxLength="8"
+                     android:maxLines="1"
+                     android:inputType="phone"
+                     android:id="@+id/edit_username" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 app:boxCornerRadiusTopEnd="30dp"
+                 app:boxCornerRadiusBottomStart="30dp"
+                 app:boxStrokeWidthFocused="0dp"
+                 app:boxCornerRadiusBottomEnd="30dp"
+                 app:passwordToggleEnabled="true"
+                 style="?attr/textInputFilledStyle"
+                 app:boxCornerRadiusTopStart="30dp"
+                 app:errorEnabled="true"
+                 app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:imeOptions="actionNext"
+                     android:hint="Contraseña"
+                     android:maxLines="1"
+                     android:inputType="textPassword"
+                     android:id="@+id/edit_password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     app:boxCornerRadiusTopEnd="30dp"
+                     app:boxCornerRadiusBottomStart="30dp"
+                     app:boxStrokeWidthFocused="0dp"
+                     app:boxCornerRadiusBottomEnd="30dp"
+                     style="?attr/textInputFilledStyle"
+                     app:boxCornerRadiusTopStart="30dp"
+                     app:errorEnabled="true"
+                     android:layout_weight="1"
+                     app:boxStrokeWidth="0dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                         android:layout_height="match_parent"
+                         android:layout_width="match_parent"
+                         android:imeOptions="actionDone"
+                         android:hint="Captcha"
+                         android:maxLines="1"
+                         android:inputType="textCapCharacters"
+                         android:id="@+id/edit_captcha" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:layout_marginStart="10dp"
+                     android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:layout_centerHorizontal="true"
+                         app:cardElevation="0dp"
+                         app:cardBackgroundColor="?attr/colorSurfaceContainerHighest"
+                         app:cardCornerRadius="30dp">
+
+                        <ImageView
+                             android:layout_height="55dp"
+                             android:layout_width="match_parent"
+                             android:src="@drawable/ic_refresh_24dp"
+                             android:layout_centerVertical="true"
+                             android:padding="6dp"
+                             android:id="@+id/image_captcha" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="65dp"
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="20dp"
+                 app:iconGravity="textStart"
+                 android:id="@+id/btn_login"
+                 android:text="Iniciar sesión" />
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="55dp"
+                 android:layout_width="match_parent"
+                 android:visibility="gone"
+                 style="@style/Widget.Material3.Button.TextButton"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/btn_forgot_password"
+                 android:text="¿Olvidó su contraseña?" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

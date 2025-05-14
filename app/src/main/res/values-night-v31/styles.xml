@@ -1,0 +1,19 @@
+<resources>
+
+
+    <style name="AppTheme.Amoled" parent="ThemeOverlay.Material3.DynamicColors.DayNight">
+
+        <item name="android:colorBackground">@color/black</item>
+        <item name="colorSurface">@color/black</item>
+        <item name="colorSurfaceVariant">@color/black</item>
+        <item name="colorSurfaceContainerHighest">@color/almost_black</item>
+        <item name="colorOnSurface">@color/white</item>
+
+
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/coordinator">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_centerInParent="true"
+         android:gravity="center"
+         android:layout_margin="30dp"
+         android:orientation="vertical"
+         android:id="@+id/not_plans_view">
+
+        <ImageView
+             android:layout_height="100dp"
+             android:layout_width="100dp"
+             android:src="@drawable/ic_empty_plans"
+             android:layout_margin="10dp" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:textAppearance="?textAppearanceBodyLarge"
+             android:id="@+id/title_error"
+             android:text="@string/title_error_planes_y_bonos_empty" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:textAppearance="?textAppearanceBodySmall"
+             android:id="@+id/message_error"
+             android:text="@string/message_error_planes_y_bonos_empty" />
+
+    </LinearLayout>
+
+</RelativeLayout>

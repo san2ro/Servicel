@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/text_status_portal"
+                android:textAppearance="?textAppearanceBodySmall"
+                android:background="?attr/colorError"
+                android:textColor="?attr/colorOnError"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/text_status_portal"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:orientation="horizontal"
+                android:id="@+id/mToolbar">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textAppearance="?textAppearanceHeadlineMedium"
+                        android:textStyle="bold"
+                        android:text="@string/title_balances" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textAppearance="?textAppearanceBodyMedium"
+                        android:id="@+id/saldo_movil" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:icon="@drawable/ic_arrow_down"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    android:tooltipText="Lista de números"
+                    android:textAppearance="?textAppearanceTitleMedium"
+                    style="@style/Widget.Material3.Button.TextButton.Icon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/phone_number"
+                    app:iconGravity="end" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_below="@id/mToolbar"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="82dp"
+                android:id="@+id/recyclerview" />
+
+            <com.google.android.material.loadingindicator.LoadingIndicator
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:indicatorSize="120dp"
+                style="@style/Widget.Material3.LoadingIndicator.Contained"
+                app:indicatorColor="?attr/colorPrimary"
+                android:id="@+id/loading" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:id="@+id/not_plans_view">
+
+                <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/ic_empty_plans"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:id="@+id/title_error"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textAppearance="?textAppearanceBodyLarge"
+                    android:text="@string/title_error_planes" />
+
+                <TextView
+                    android:id="@+id/message_error"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textAppearance="?textAppearanceBodySmall"
+                    android:text="@string/message_error_planes" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:id="@+id/not_login">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/not_login_view">
+
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/ic_not_login_unfilled"
+                android:layout_margin="10dp"
+                android:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textAppearance="?textAppearanceBodyLarge"
+                android:text="Aún no ha iniciado sesión" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:id="@+id/login"
+                android:text="Iniciar sesión" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

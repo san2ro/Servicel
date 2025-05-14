@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="20dp">
+
+    <ImageButton
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:src="@drawable/ic_arrow_down"
+         android:background="?attr/selectableItemBackgroundBorderless"
+         android:layout_alignParentLeft="true"
+         android:id="@+id/close" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_below="@id/close"
+         android:textAppearance="?textAppearanceTitleMedium"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="40dp"
+         android:id="@+id/title"
+         android:text="Detalle de factura" />
+
+    <ImageView
+         android:layout_height="150dp"
+         android:layout_width="150dp"
+         android:layout_below="@id/title"
+         android:layout_margin="10dp"
+         android:layout_centerHorizontal="true"
+         android:id="@+id/code_qr" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_below="@id/code_qr"
+         android:orientation="vertical"
+         android:layout_marginTop="20dp"
+         android:id="@+id/content">
+
+        <RelativeLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_margin="4dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:textAppearance="?textAppearanceBodyMedium"
+                 android:layout_alignParentLeft="true"
+                 android:id="@+id/title_monto"
+                 android:text="Monto"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:textAppearance="?textAppearanceBodySmall"
+                 android:layout_alignParentRight="true"
+                 android:id="@+id/monto"
+                 android:text="00.00" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_margin="4dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:textAppearance="?textAppearanceBodyMedium"
+                 android:layout_alignParentLeft="true"
+                 android:id="@+id/title_descuento"
+                 android:text="Descuento"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:textAppearance="?textAppearanceBodySmall"
+                 android:textColor="@color/md_theme_error"
+                 android:layout_alignParentRight="true"
+                 android:id="@+id/descuento"
+                 android:text="0%" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_margin="4dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:textAppearance="?textAppearanceBodyMedium"
+                 android:layout_alignParentLeft="true"
+                 android:id="@+id/title_monto_final"
+                 android:text="Total a pagar"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:textAppearance="?textAppearanceBodySmall"
+                 android:layout_alignParentRight="true"
+                 android:id="@+id/total"
+                 android:text="00.00" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_below="@id/content"
+         android:layout_centerHorizontal="true"
+         style="@style/Widget.Material3.Button"
+         android:layout_marginTop="20dp"
+         android:id="@+id/to_tm"
+         android:text="Ir a Transfermóvil" />
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:id="@+id/coordinator">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="?textAppearanceHeadlineSmall"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/title"
+        android:text="Contribuir"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="90dp"
+        android:layout_width="150dp"
+        android:layout_below="@id/title"
+        android:padding="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/content_amount">
+
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:imeOptions="actionDone"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:hint="Monto"
+            android:textSize="45dp"
+            android:singleLine="true"
+            android:maxLength="4"
+            android:text="$50"
+            android:id="@+id/amount" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_below="@id/content_amount"
+        android:gravity="center"
+        android:textAppearance="?textAppearanceLabelSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="El monto predeterminado es simbólico. Puedes apoyar el desarrollo de la aplicación con cualquier cantidad que desees." />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:textAppearance="?textAppearanceTitleMedium"
+        android:layout_above="@id/metod"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Seleccione el método" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/ok"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:id="@+id/metod">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:singleSelection="true"
+            app:singleLine="true"
+            app:checkedChip="@id/saldo"
+            app:selectionRequired="true"
+            android:id="@+id/chipGroup">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/saldo"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:checkable="true"
+                android:textAppearance="?textAppearanceTitleMedium"
+                android:layout_margin="5dp"
+                app:chipIconSize="35dp"
+                app:chipIcon="@drawable/ic_saldo_movil"
+                android:layout_weight="1"
+                android:text="Saldo móvil" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/transfer"
+                android:layout_height="70dp"
+                android:layout_width="wrap_content"
+                android:checkable="true"
+                app:chipIconTint="?attr/colorControlNormal"
+                android:textAppearance="?textAppearanceTitleMedium"
+                android:layout_margin="5dp"
+                app:chipIconSize="35dp"
+                app:chipIcon="@drawable/ic_transfermovil"
+                android:layout_weight="1"
+                android:text="Transfermóvil" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textAppearance="?textAppearanceLabelMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/message"
+        android:text="Este aporte es voluntario y representa una muestra de gratitud. No constituye una licencia ni un pago por el uso de la aplicación." />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:layout_above="@id/message"
+        app:cornerRadius="10dp"
+        android:id="@+id/ok"
+        android:text="Continuar" />
+
+</RelativeLayout>

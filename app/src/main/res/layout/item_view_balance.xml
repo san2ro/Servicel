@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:strokeWidth="1dp"
+    android:id="@+id/root">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?textAppearanceTitleSmall"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:id="@+id/title" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:drawablePadding="4dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/title"
+            android:textAppearance="?textAppearanceTitleLarge"
+            android:drawableStart="@drawable/ic_usage_18dp"
+            android:textStyle="bold"
+            android:text=""
+            android:id="@+id/text_restante" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/text_restante"
+            android:drawablePadding="4dp"
+            android:layout_marginTop="6dp"
+            android:textAppearance="?textAppearanceBodySmall"
+            android:drawableStart="@drawable/ic_plan_14dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/text_plan" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/text_plan"
+            android:background="?attr/colorSurfaceContainerHighest"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:drawablePadding="5dp"
+                android:textAppearance="?textAppearanceBodyLarge"
+                android:layout_margin="10dp"
+                android:textColor="?attr/colorOnSurface"
+                android:drawableStart="@drawable/ic_calendar_18dp"
+                android:drawableTint="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:text=""
+                android:id="@+id/text_vence" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progress"
+                app:trackCornerRadius="70dp"
+                app:indicatorColor="?attr/colorPrimary"
+                app:trackColor="?attr/colorSurface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

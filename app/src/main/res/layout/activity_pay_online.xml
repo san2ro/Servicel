@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="10dp"
+         android:layout_marginEnd="16dp"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp"
+         android:layout_marginStart="16dp"
+         android:id="@+id/top_content">
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             app:icon="@drawable/ic_back_24dp"
+             app:iconSize="26dp"
+             android:tooltipText="@string/title_back"
+             app:iconTint="?attr/colorControlNormal"
+             style="?attr/materialIconButtonStyle"
+             android:id="@+id/close" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_weight="1">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textAppearance="?textAppearanceTitleLarge"
+                 android:textStyle="bold"
+                 android:text="Recargar cuenta" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textAppearance="?textAppearanceBodySmall"
+                 android:text="Recargar cuenta de navegación en línea" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_centerInParent="true"
+         android:layout_margin="20dp"
+         app:strokeWidth="0dp"
+         app:cardElevation="3dp">
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             android:orientation="vertical">
+
+            <ImageView
+                 android:layout_height="45dp"
+                 android:layout_width="45dp"
+                 android:layout_marginBottom="10dp"
+                 android:src="@drawable/ic_pay_card"
+                 android:layout_gravity="center_horizontal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 app:boxCornerRadiusTopEnd="30dp"
+                 android:hint="Cuenta a recargar"
+                 android:layout_margin="4dp"
+                 app:boxCornerRadiusBottomStart="30dp"
+                 app:boxStrokeWidthFocused="0dp"
+                 app:boxCornerRadiusBottomEnd="30dp"
+                 style="?attr/textInputFilledStyle"
+                 app:boxCornerRadiusTopStart="30dp"
+                 app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:singleLine="true"
+                     android:inputType="textEmailAddress"
+                     android:id="@+id/account" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 app:boxCornerRadiusTopEnd="30dp"
+                 android:hint="Monto"
+                 android:layout_margin="4dp"
+                 app:boxCornerRadiusBottomStart="30dp"
+                 app:boxStrokeWidthFocused="0dp"
+                 app:boxCornerRadiusBottomEnd="30dp"
+                 style="?attr/textInputFilledStyle"
+                 app:boxCornerRadiusTopStart="30dp"
+                 app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:singleLine="true"
+                     android:inputType="numberDecimal"
+                     android:id="@+id/monto" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:textAppearance="?textAppearanceBodyMedium"
+                 android:layout_marginTop="10dp"
+                 android:text="Método de pago" />
+
+            <com.google.android.material.button.MaterialSplitButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/splitbutton">
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     app:icon="@drawable/ic_transfermovil"
+                     android:paddingEnd="10dp"
+                     app:iconSize="20dp"
+                     android:paddingBottom="6dp"
+                     style="?attr/materialSplitButtonIconFilledTonalStyle"
+                     android:paddingStart="10dp"
+                     android:minWidth="10dp"
+                     android:paddingTop="6dp"
+                     android:text="Transfermóvil" />
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     app:icon="@drawable/m3_split_button_chevron_avd"
+                     android:visibility="gone"
+                     android:paddingEnd="14dp"
+                     style="?attr/materialSplitButtonIconFilledTonalStyle"
+                     android:paddingStart="14dp"
+                     android:minWidth="20dp"
+                     android:id="@+id/expand_more_or_less_filled" />
+
+            </com.google.android.material.button.MaterialSplitButton>
+
+            <Button
+                 android:layout_height="65dp"
+                 android:layout_width="match_parent"
+                 app:cornerRadius="10dp"
+                 android:layout_marginTop="20dp"
+                 android:id="@+id/btn_ok"
+                 android:text="Recargar" />
+
+            <Button
+                 android:layout_height="65dp"
+                 android:layout_width="match_parent"
+                 app:cornerRadius="10dp"
+                 style="?attr/materialButtonOutlinedStyle"
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/btn_check"
+                 android:text="Estado de pago" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

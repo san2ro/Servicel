@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "cu.arr.etecsa.api.api-etecsa-merged_res-19:/layout-v21/notification_action_tombstone.xml",
+        "source": "cu.arr.etecsa.api.api-etecsa-core-1.9.0-14:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "cu.arr.etecsa.api.api-etecsa-merged_res-19:/layout-v21/notification_template_icon_group.xml",
+        "source": "cu.arr.etecsa.api.api-etecsa-core-1.9.0-14:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "cu.arr.etecsa.api.api-etecsa-merged_res-19:/layout-v21/notification_action.xml",
+        "source": "cu.arr.etecsa.api.api-etecsa-core-1.9.0-14:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "cu.arr.etecsa.api.api-etecsa-merged_res-19:/layout-v21/notification_template_custom_big.xml",
+        "source": "cu.arr.etecsa.api.api-etecsa-core-1.9.0-14:/layout-v21/notification_template_custom_big.xml"
+    }
+]

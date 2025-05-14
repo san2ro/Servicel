@@ -1,0 +1,9 @@
+<resources>
+
+    <declare-styleable name="ArrPreferenceTheme">
+       
+        <attr name="titleColor" format="color" />
+
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "cu.arr.etecsa.api.test.api-etecsa-mergeDebugAndroidTestResources-17:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/data/user/0/com.itsaky.androidide/files/home/.gradle/caches/transforms-4/f36fbaaa3f021dd66d93dbdcbf816fe6/transformed/appcompat-1.6.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_margin="5dp"
+         app:cardElevation="2dp">
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:orientation="vertical">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:background="?attr/colorPrimaryVariant"
+                 android:textAppearance="?textAppearanceBodyLarge"
+                 android:padding="6dp"
+                 android:textColor="?attr/colorOnPrimary"
+                 android:id="@+id/title_text" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_vertical"
+                 android:orientation="horizontal">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center_horizontal"
+                     android:padding="6dp"
+                     android:layout_margin="5dp"
+                     android:orientation="vertical"
+                     android:layout_weight="1">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center"
+                         android:textAppearance="?textAppearanceBodyLarge"
+                         android:id="@+id/value_text" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center"
+                         android:textAppearance="?textAppearanceBodySmall"
+                         android:text="Restante" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center_horizontal"
+                     android:padding="6dp"
+                     android:layout_margin="5dp"
+                     android:orientation="vertical"
+                     android:layout_weight="1">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center"
+                         android:textAppearance="?textAppearanceBodyLarge"
+                         android:id="@+id/date_text" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center"
+                         android:textAppearance="?textAppearanceBodySmall"
+                         android:text="Vence" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:visibility="gone"
+                 android:layout_marginEnd="10dp"
+                 android:padding="6dp"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="4dp"
+                 android:layout_marginStart="10dp">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center"
+                     android:textAppearance="?textAppearanceBodyLarge"
+                     android:layout_weight="1"
+                     android:id="@+id/value_textt" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center"
+                     android:textAppearance="?textAppearanceBodyLarge"
+                     android:layout_weight="1"
+                     android:id="@+id/date_textt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="10dp"
+                 android:visibility="gone"
+                 android:layout_marginEnd="10dp"
+                 android:padding="6dp"
+                 android:orientation="horizontal"
+                 android:layout_marginStart="10dp">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center"
+                     android:textAppearance="?textAppearanceBodySmall"
+                     android:layout_weight="1"
+                     android:text="Datos" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center"
+                     android:textAppearance="?textAppearanceBodySmall"
+                     android:layout_weight="1"
+                     android:text="Vence" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

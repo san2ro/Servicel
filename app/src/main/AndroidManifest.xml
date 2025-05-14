@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"
+        android:minSdkVersion="33" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:name="AppServicel"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.arr.simple.DebugActivity"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.LoginActivity"
+            android:label="Inicio de sesión"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.ui.SettingsActivity"
+            android:label="@string/title_settings"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.PerfilActivity"
+            android:label="Perfil"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.ReportActivity"
+            android:label="Reportar error"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.MyQrCodeActivity"
+            android:label="Código QR"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.operaciones.ChangePasswordActivity"
+            android:label="Cambiar contraseña"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.operaciones.PayOnlineActivity"
+            android:label="Recarga en línea"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.operaciones.TopUpCuponActivity"
+            android:label="Recargar con cupón"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.operaciones.TransferActivity"
+            android:label="Transferir saldo"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.operaciones.NewAccountNavActivity"
+            android:label="@string/app_name"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.AboutActivity"
+            android:label="Acerca de"
+            android:exported="false" />
+
+
+        <activity android:name="com.arr.simple.activities.ui.DonationActivity"
+            android:label="@string/app_name"
+            android:exported="false" />
+
+        <activity android:name="com.arr.simple.activities.operaciones.correo.ChangePasswordActivity"
+            android:label="@string/app_name"
+            android:exported="false" />
+
+    </application>
+</manifest>

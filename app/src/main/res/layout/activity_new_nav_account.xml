@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/top_content">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:icon="@drawable/ic_back_24dp"
+            app:iconSize="26dp"
+            android:tooltipText="@string/title_back"
+            app:iconTint="?attr/colorControlNormal"
+            style="?attr/materialIconButtonStyle"
+            android:id="@+id/close" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textAppearance="?textAppearanceTitleLarge"
+                android:textStyle="bold"
+                android:text="Crear cuenta" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textAppearance="?textAppearanceBodySmall"
+                android:text="Crear una cuenta de navegación internacional" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_height="45dp"
+                android:layout_width="45dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_navigation_24dp"
+                android:layout_gravity="center_horizontal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_account"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:suffixText="@nauta.com.cu"
+                android:hint="Usuario"
+                android:layout_margin="4dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                style="?attr/textInputFilledStyle"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/account" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_password"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:boxCornerRadiusTopEnd="30dp"
+                android:hint="Contraseña"
+                android:layout_margin="4dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:boxCornerRadiusBottomEnd="30dp"
+                style="?attr/textInputFilledStyle"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:id="@+id/password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_height="65dp"
+                android:layout_width="match_parent"
+                app:cornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_ok"
+                android:text="Crear cuenta" />
+
+            <Button
+                android:layout_height="65dp"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                app:cornerRadius="10dp"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_check"
+                android:text="Estado de pago" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

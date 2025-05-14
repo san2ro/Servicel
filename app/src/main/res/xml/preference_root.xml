@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Categoría de preferencias -->
+    <com.arr.preference.ArrPreferenceCategory
+        app:key="account_category"
+        app:titleColor="?attr/colorOutline"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:iconSpaceReserved="false"
+        android:title="Cuenta">
+
+        <com.arr.preference.ArrPreference
+            app:iconSpaceReserved="true"
+            android:key="account"
+            android:title="Perfil"
+            app:icon="@drawable/ic_account_unfill_24dp"
+            android:summary="Gestione la infomación de su perfil nauta" />
+
+    </com.arr.preference.ArrPreferenceCategory>
+
+    <com.arr.preference.ArrPreferenceCategory
+        app:key="account_category"
+        app:titleColor="?attr/colorOutline"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:iconSpaceReserved="false"
+        android:title="UI">
+
+        <com.arr.preference.ArrSwitchPreference
+            app:iconSpaceReserved="true"
+            android:key="amoled"
+            android:defaultValue="false"
+            app:icon="@drawable/ic_palette_24dp"
+            android:title="Tema AMOLED"
+            android:summary="Usar fondo negro en toda la aplicación para ahorrar batería" />
+
+        <com.arr.preference.ArrSwitchPreference
+            app:iconSpaceReserved="true"
+            android:key="usage_notif"
+            android:defaultValue="false"
+            app:icon="@drawable/ic_datos_filled_24dp"
+            android:title="Uso de datos"
+            android:summary="Mostrar el uso de datos en la barra de notificaciones." />
+
+    </com.arr.preference.ArrPreferenceCategory>
+
+    <com.arr.preference.ArrPreferenceCategory
+        app:titleColor="?attr/colorOutline"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false"
+        app:iconSpaceReserved="false"
+        android:title="General">
+
+        <com.arr.preference.ArrSwitchPreference
+            app:iconSpaceReserved="true"
+            android:key="confirm"
+            app:icon="@drawable/ic_check_24dp"
+            android:title="Saltar confirmación"
+            android:summary="Al activar esta función todas las acciones que cuenten con mensaje de confirmación se ejecutarán sin solicitar confirmación" />
+
+        <com.arr.preference.ArrSwitchPreference
+            app:iconSpaceReserved="true"
+            android:key="banner"
+            app:icon="@drawable/ic_promo_24dp"
+            android:title="Promociones"
+            android:summary="Mostrar banner de promociones en la pantalla principal" />
+
+        <com.arr.preference.ArrSwitchPreference
+            app:iconSpaceReserved="true"
+            android:key="update_balances"
+            android:defaultValue="false"
+            app:icon="@drawable/ic_update_24dp"
+            android:title="Actualizar balances"
+            android:summary="Se actualizará sus balances periodicamente. Si hay inestabilidad en el portal nauta, la información no se actualizará." />
+
+        <com.arr.preference.ArrPreference
+            app:iconSpaceReserved="true"
+            android:key="ahorro"
+            app:icon="@drawable/ic_battery_saving_24dp"
+            android:title="Ahorro de bateria"
+            android:summary="Desactivar ahorro de bateria para mejorar funcionamiento de las actualizaciones" />
+
+        <com.arr.preference.ArrSwitchPreference
+            app:iconSpaceReserved="true"
+            android:key="notif_update"
+            android:defaultValue="false"
+            app:icon="@drawable/ic_notification_24dp"
+            android:title="Notificación"
+            android:summary="Notificar las actualizaciones en segundo plano de los balances" />
+
+    </com.arr.preference.ArrPreferenceCategory>
+
+
+</PreferenceScreen>

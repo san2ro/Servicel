@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:icon="@drawable/ic_back_24dp"
+            app:iconSize="26dp"
+            android:tooltipText="@string/title_back"
+            app:iconTint="?attr/colorControlNormal"
+            style="?attr/materialIconButtonStyle"
+            android:id="@+id/close" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAppearance="?textAppearanceHeadlineSmall"
+            android:layout_weight="1"
+            android:id="@+id/title"
+            android:text="Ajustes"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:id="@+id/frame_layout">
+
+    </FrameLayout>
+
+</LinearLayout>

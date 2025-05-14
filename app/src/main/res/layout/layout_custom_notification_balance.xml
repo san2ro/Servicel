@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="5dp">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:layout_weight="1">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?textAppearanceBodyMedium"
+             android:textSize="14dp"
+             android:textStyle="bold"
+             android:textColor="@color/md_theme_onSurface"
+             android:text="3G/4G" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?textAppearanceBodySmall"
+             android:textSize="12dp"
+             android:textColor="@color/md_theme_onSurface"
+             android:id="@+id/all_network" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:layout_weight="1">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?textAppearanceBodyMedium"
+             android:textSize="14dp"
+             android:textStyle="bold"
+             android:textColor="@color/md_theme_onSurface"
+             android:text="LTE" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?textAppearanceBodySmall"
+             android:textSize="12dp"
+             android:textColor="@color/md_theme_onSurface"
+             android:id="@+id/lte_network" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:layout_weight="1">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?textAppearanceBodyMedium"
+             android:textSize="14dp"
+             android:textStyle="bold"
+             android:textColor="@color/md_theme_onSurface"
+             android:text="Vence" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?textAppearanceBodySmall"
+             android:textSize="12dp"
+             android:textColor="@color/md_theme_onSurface"
+             android:id="@+id/expire" />
+
+    </LinearLayout>
+
+</LinearLayout>

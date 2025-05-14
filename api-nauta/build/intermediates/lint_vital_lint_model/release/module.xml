@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/storage/emulated/0/AndroidIDEProjects/servicel/api-etecsa"
+    name=":api-etecsa"
+    type="LIBRARY"
+    maven="Servicel:api-etecsa:"
+    agpVersion="8.2.1"
+    buildFolder="build"
+    bootClassPath="/data/user/0/com.itsaky.androidide/files/home/android-sdk/platforms/android-34/android.jar:/data/user/0/com.itsaky.androidide/files/home/android-sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
